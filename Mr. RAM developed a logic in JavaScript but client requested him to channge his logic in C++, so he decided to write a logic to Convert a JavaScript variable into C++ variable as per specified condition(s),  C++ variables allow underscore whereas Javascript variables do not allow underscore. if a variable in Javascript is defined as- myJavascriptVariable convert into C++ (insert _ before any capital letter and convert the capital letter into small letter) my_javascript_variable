@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+       char s[100];
+       int i;
+       fgets(s,100,stdin);
+              for(i=0;i<strlen(s);i++)
+        {
+              if(s[i]>=65 && s[i]<=90){ 
+                s[i]=s[i]+32;
+                printf("_%c",s[i]); 
+     }
+         else{
+               printf("%c",s[i]);
+           }
+}
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
