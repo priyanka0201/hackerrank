@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i;
+   
+    scanf("%d",&n);
+    int arr[n],q,x;
+    for( i=0;i<n;i++)
+    {
+        fscanf(stdin,"%d",&arr[i]);
+    }
+    scanf("%d",&q);
+    int roll[q];
+    for(i=0;i<q;i++)
+    {
+        scanf("%d",&roll[i]);
+    }
+    for(x=0;x<q;x++)
+    {
+        int sum=0,class=0,key=0;
+    while(sum<roll[x])
+    {
+        class++;
+        sum+=arr[key];
+        key++;
+    }
+    printf("%d\n",class);    
+    }
+   
+   
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
